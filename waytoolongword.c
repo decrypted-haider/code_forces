@@ -22,6 +22,6 @@ int main () {
         else {
             printf("%s\n",s);
         }
-    }    
+    }
     return 0;
 }
