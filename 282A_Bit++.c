@@ -7,8 +7,7 @@ int main() {
         scanf(" %c%c%c",&first,&second,&third);
         if(second=='+') {
             x++;
-        }
-        else {
+        } else {
             x--;
         }
     }
