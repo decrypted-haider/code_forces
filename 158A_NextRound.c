@@ -6,7 +6,7 @@ int main() {
     int arr[n];
     for(int i=0;i<n;i++) {
         scanf("%d",&arr[i]);
-        if(arr[i] && arr[i]>=arr[k-1]) {
+        if(arr[i]>0 && arr[i]>=arr[k-1]) {
             pass++;
         }
     }
