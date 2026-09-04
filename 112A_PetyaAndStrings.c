@@ -11,7 +11,6 @@ int solution(char s1[],char s2[]) {
         else if(c1<c2) return -1;
         if(i==strlen(s1)-1) return 0;
     }
-
 }
 
 int main() {
@@ -19,8 +18,6 @@ int main() {
     char s2[101];
     scanf("%s",s1);
     scanf("%s",s2);
-    
     printf("%d",solution(s1,s2));
-
     return 0;
 }
