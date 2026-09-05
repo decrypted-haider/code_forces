@@ -18,16 +18,16 @@ void isGoB(char s[]) {
     }
 }
 //hasnain solution:
-void solution(char s[]) {
-    int count=0;
-    int freq[26]={0};
-    for(int i=0;s[i]!='\0';i++) {
-        if(freq[s[i]-'a']==0) count++;
-        freq[s[i]-'a']=1;
-    }
-    if(count%2==0) printf("CHAT WITH HER!");
-    else printf("IGNORE HIM!");
-}
+// void solution(char s[]) {
+//     int count=0;
+//     int freq[26]={0};
+//     for(int i=0;s[i]!='\0';i++) {
+//         if(freq[s[i]-'a']==0) count++;
+//         freq[s[i]-'a']=1;
+//     }
+//     if(count%2==0) printf("CHAT WITH HER!");
+//     else printf("IGNORE HIM!");
+// }
 
 int main() {
     char s[101];
