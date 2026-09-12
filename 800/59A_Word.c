@@ -19,7 +19,7 @@ int main() {
                 continue;
             } else {
                 s[i]+=32;
-            } 
+            }
         }
         if(cap>small) {
             if(s[i]>='A'&&s[i]<='Z') {
