@@ -7,16 +7,19 @@ int main() {
     scanf("%s",s);
     scanf("%s",t);
     int len=strlen(s);
-    for(int i=0,j=len-1;i<len,j>=0;i++,j--) {
-        if(s[i]==t[j]) {
-            yes++;
-        }
-    }
-    if(yes==len) {
-        printf("YES");
-    }
+    if(len!=strlen(t)) printf("NO");
     else {
-        printf("NO");
-    }
+        for(int i=0,j=len-1;i<len,j>=0;i++,j--) {
+            if(s[i]==t[j]) {
+                yes++;
+            }
+        }
+        if(yes==len) {
+            printf("YES");
+        }
+        else {
+            printf("NO");
+        }
+    }    
     return 0;
 }
