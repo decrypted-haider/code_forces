@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main() {
-    int n;
+    long long n;
     scanf("%d",&n);
     int lucky=0;
     while(n) {
