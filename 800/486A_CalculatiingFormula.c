@@ -1,17 +1,11 @@
 #include<stdio.h>
 
- int f(int n) {
-      int result=0;
-      for(int i=1;i<=n;i++) {
-          result+=i;
-          result*=-1;
-      }
-      if(n%2==0) return result*-1;
-      return result;
+ long long f(int n) {
+      if(n%2==0) return n/2;
+      return -(long long)(n+1)/2;
 }
 
 //hasnain solution:
-
 // int solution(int n) {
 //     long long sum=0;
 //     for(int i=1;i<=n;i++) {
@@ -25,6 +19,6 @@
 int main() {
     int n;
     scanf("%d",&n);
-    printf("%d",f(n));
+    printf("%lld",f(n));
     return 0;
 }
