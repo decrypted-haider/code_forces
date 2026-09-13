@@ -20,7 +20,7 @@ int main () {
             printf("%c%d%c\n",s[i][0],len-2,s[i][len-1]);
         } 
         else {
-            printf("%s\n",s);
+            printf("%s\n",s[i]);
         }
     }
     return 0;
