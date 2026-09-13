@@ -1,8 +1,9 @@
 #include<stdio.h>
 
  long long f(int n) {
-      if(n%2==0) return n/2;
-      return -(long long)(n+1)/2;
+        if(n<=0) return 0;
+        if(n%2==0) return (long long)n/2;
+        return -((long long)n+1)/2;
 }
 
 //hasnain solution:
