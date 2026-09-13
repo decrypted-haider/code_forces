@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main() {
     long long n;
-    scanf("%d",&n);
+    scanf("%lld",&n);
     int lucky=0;
     while(n) {
         if(n%10==4||n%10==7) {
