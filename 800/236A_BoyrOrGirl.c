@@ -32,6 +32,6 @@ void isGoB(char s[]) {
 int main() {
     char s[101];
     scanf("%s",s);
-    solution(s);
+    isGoB(s);
     return 0;
 }
