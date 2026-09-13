@@ -1,6 +1,6 @@
 #include<stdio.h>
 
- long long f(int n) {
+ long long f(long long n) {
         if(n<=0) return 0;
         if(n%2==0) return (long long)n/2;
         return -((long long)n+1)/2;
@@ -18,8 +18,8 @@
 // }
 
 int main() {
-    int n;
-    scanf("%d",&n);
+    long long n;
+    scanf("%lld",&n);
     printf("%lld",f(n));
     return 0;
 }
