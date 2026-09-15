@@ -11,25 +11,13 @@ int main() {
     char s[n];
     bool freq[26]={false};
     scanf("%s",s);
-    for(int i=0;i<n;i++) {
-        s[i]=mytolow(s[i]);
-    }
-    if(n<26) {
-        printf("NO");
-    }
-    else {
-        for(int i=0;i<n;i++) {
-           freq[s[i]-'a']=true;
-        }
-        for(int i=0;i<26;i++) {
-            if(freq[i]!=true) add--;
-        }
-        if(add==26) {
-            printf("YES");
-        }
-        else {
-            printf("NO");
-        }
+    for(int i=0;i<n;i++) s[i]=mytolow(s[i]);
+    if(n<26) printf("NO");
+    else { 
+        for(int i=0;i<n;i++) freq[s[i]-'a']=true;
+        for(int i=0;i<26;i++) if(freq[i]!=true) add--;
+        if(add==26) printf("YES");
+        else printf("NO");
     }
     return 0;
 }
