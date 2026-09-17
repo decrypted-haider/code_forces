@@ -8,11 +8,11 @@ int minimum(int arr[],int size) {
     return minIdx;
 }
 int maximum(int arr[],int size) {
-    int maxIdx = 0;
-    for (int i = 1; i < size; i++) {
-        if (arr[i] > arr[maxIdx]) maxIdx = i;
+    int maxIdx=0;
+    for(int i=1;i<size;i++) {
+        if(arr[i]>arr[maxIdx]) maxIdx=i;
     }
-    return maxIdx;
+    return maxIdx; 
 }
 
 int main() {
