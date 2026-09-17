@@ -3,14 +3,14 @@
 int minimum(int arr[],int size) {
     int minIdx=0;
     for(int i=1;i<size;i++) {
-        if(arr[i]<arr[minIdx]) minIdx=i;
+        if(arr[i]<=arr[minIdx]) minIdx=i;
     }
     return minIdx;
 }
 int maximum(int arr[],int size) {
     int maxIdx = 0;
-    for (int i = 1; i < size; i++) {
-        if (arr[i] > arr[maxIdx]) maxIdx = i;
+    for(int i=1;i< size;i++) {
+        if(arr[i]>arr[maxIdx])maxIdx=i;
     }
     return maxIdx;
 }
@@ -26,7 +26,7 @@ int main() {
     int minIdx = minimum(s,n);
     int maxIdx = maximum(s,n);
     
-    if(minIdx<maxIdx) moves-=2;    
+    if(minIdx<maxIdx) moves-=1;    
     while(maxIdx!=0) {
         maxIdx--;
         moves++;
@@ -38,6 +38,3 @@ int main() {
     printf("%d",moves);
     return 0;
 }
-
-
-
