@@ -8,6 +8,7 @@ int main() {
     int len=strlen(s);
     bool freq[26]={false};
     for(int i=1;i<=len;i+=3) {
+
         freq[s[i]-'a']=true;
     }
     for(int i=0;i<26;i++) {
