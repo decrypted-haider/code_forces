@@ -1,18 +1,13 @@
 #include<stdio.h>
 int main() {
-    int n;
-    scanf("%d",&n);
-    int arr[n];
+    long long n;
+    scanf("%lld",&n);
+    long long arr[n];
     for(int i=0;i<n;i++) {
-        scanf("%d",&arr[i]);
+        scanf("%lld",&arr[i]);
     }
     for(int i=0;i<n;i++) {
-        if(arr[i]<=2) printf("0\n");
-        else {
-            int current=arr[i]/2;
-            if(current%2==0) printf("%d\n",current-1);
-            else printf("%d\n",current);
-        }
+        printf("%lld\n",(arr[i]-1)/2);
     }
     return 0;
 }
