@@ -6,7 +6,7 @@ int main() {
         if(i%2==0) for(int j=0;j<m;j++) printf("#");
         else if(i%4==1) {
             for(int k=0;k<m-1;k++) printf(".");
-        printf("#");
+            printf("#");
         }
         else {
             printf("#");
