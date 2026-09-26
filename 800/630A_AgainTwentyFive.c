@@ -13,3 +13,7 @@ int main() {
     printf("%d%d",first,second);
     return 0;
 }
+    // int n;
+    // scanf("%d",&n);
+    // printf("25");
+    // return 0;

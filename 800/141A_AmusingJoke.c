@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-#include<stdbool.h>
 int main() {
     char s1[101];
     char s2[101];

@@ -10,7 +10,7 @@ int main() {
             if(i==j) continue;
             if(colors[i][1]==colors[j][0]) same++;
         }
-    }   
+    }
     printf("%d",same);
     return 0;
 }
