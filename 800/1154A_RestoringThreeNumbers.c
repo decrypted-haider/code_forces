@@ -29,6 +29,6 @@ int main() {
     c=abc-ab;
     b=bc-c;
     a=ac-c;
-    printf("%d%d%d",a,b,c);
+    printf("%d%d%d",b,a,c);
     return 0;
 }
