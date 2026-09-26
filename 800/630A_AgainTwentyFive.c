@@ -1,10 +1,12 @@
 #include<stdio.h>
 int main() {
-    int n;
+    long long n;
     int a=5;
     int first,second;
-    scanf("%d",&n);
-    for(int i=0;i<n;i++) a*=5;
+    scanf("%lld",&n);
+    n=n-n+5;
+    for(int i=0;i<n;i++)
+    a*=5;
     second=a%10;
     a/=10;
     first=a%10;
